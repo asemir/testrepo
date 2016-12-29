@@ -20,6 +20,7 @@ public String[] GetGroupNames() {
         result = new String[capslist.Length];
        //Comment4
        //Comment5
+       //Comment6
         System.Array.Copy(capslist, 0, result, 0, capslist.Length);
     }
 
