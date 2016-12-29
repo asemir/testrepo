@@ -12,12 +12,14 @@ public String[] GetGroupNames() {
         //Comment
         //Comment2
         //Comment3
+        
         for (int i = 0; i < max; i++) {
             result[i] = Convert.ToString(i, CultureInfo.InvariantCulture);
         }
     }
     else {
         result = new String[capslist.Length];
+
        //Comment4
        //Comment5
        //Comment6
