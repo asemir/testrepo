@@ -9,7 +9,7 @@ public String[] GetGroupNames() {
     if (capslist == null) {
         int max = capsize;
         result = new String[max];
-
+        //Comment
         for (int i = 0; i < max; i++) {
             result[i] = Convert.ToString(i, CultureInfo.InvariantCulture);
         }
