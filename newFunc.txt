@@ -1,0 +1,24 @@
+/// <devdoc>
+/// Returns 
+/// the GroupNameCollection for the regular expression. This collection contains the
+/// set of strings used to name capturing groups in the expression. 
+/// </devdoc>
+public String[] GetGroupNames() {
+    String[] result;
+
+    if (capslist == null) {
+        int max = capsize;
+        result = new String[max];
+
+        for (int i = 0; i < max; i++) {
+            result[i] = Convert.ToString(i, CultureInfo.InvariantCulture);
+        }
+    }
+    else {
+        result = new String[capslist.Length];
+
+        System.Array.Copy(capslist, 0, result, 0, capslist.Length);
+    }
+
+    return result;
+}
